@@ -10,6 +10,10 @@
 		5AAE856FB3A9DC39E736D171 /* Pods_IBDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CDFC2F1F38946AFECDDEA7DC /* Pods_IBDemo.framework */; };
 		FC0465E01DD2EB6A009FD423 /* LightViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC0465DF1DD2EB6A009FD423 /* LightViewController.swift */; };
 		FC0465E21DD31CB7009FD423 /* AirConditionerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC0465E11DD31CB7009FD423 /* AirConditionerViewController.swift */; };
+		FC7679871DD324C70086316A /* LivingRoomViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC7679861DD324C70086316A /* LivingRoomViewController.swift */; };
+		FC7679891DD324E90086316A /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC7679881DD324E90086316A /* HomeViewController.swift */; };
+		FC76798B1DD324FA0086316A /* UserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC76798A1DD324FA0086316A /* UserViewController.swift */; };
+		FC76798D1DD325080086316A /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC76798C1DD325080086316A /* SettingsViewController.swift */; };
 		FCBC9C4C1DD1E8D800BEE0A4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCBC9C4B1DD1E8D800BEE0A4 /* AppDelegate.swift */; };
 		FCBC9C4E1DD1E8D800BEE0A4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCBC9C4D1DD1E8D800BEE0A4 /* ViewController.swift */; };
 		FCBC9C511DD1E8D800BEE0A4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FCBC9C4F1DD1E8D800BEE0A4 /* Main.storyboard */; };
@@ -27,6 +31,10 @@
 		CDFC2F1F38946AFECDDEA7DC /* Pods_IBDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_IBDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FC0465DF1DD2EB6A009FD423 /* LightViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LightViewController.swift; sourceTree = "<group>"; };
 		FC0465E11DD31CB7009FD423 /* AirConditionerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AirConditionerViewController.swift; sourceTree = "<group>"; };
+		FC7679861DD324C70086316A /* LivingRoomViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LivingRoomViewController.swift; sourceTree = "<group>"; };
+		FC7679881DD324E90086316A /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		FC76798A1DD324FA0086316A /* UserViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserViewController.swift; sourceTree = "<group>"; };
+		FC76798C1DD325080086316A /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		FCBC9C481DD1E8D800BEE0A4 /* IBDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IBDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FCBC9C4B1DD1E8D800BEE0A4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FCBC9C4D1DD1E8D800BEE0A4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -102,6 +110,10 @@
 				FCBC9C521DD1E8D800BEE0A4 /* IBDemo.xcdatamodeld */,
 				FCBC9C601DD2009200BEE0A4 /* URLDefine.swift */,
 				FCBC9C621DD2095200BEE0A4 /* StaticFunctions.swift */,
+				FC7679861DD324C70086316A /* LivingRoomViewController.swift */,
+				FC7679881DD324E90086316A /* HomeViewController.swift */,
+				FC76798A1DD324FA0086316A /* UserViewController.swift */,
+				FC76798C1DD325080086316A /* SettingsViewController.swift */,
 			);
 			path = IBDemo;
 			sourceTree = "<group>";
@@ -232,12 +244,16 @@
 			files = (
 				FCBC9C611DD2009200BEE0A4 /* URLDefine.swift in Sources */,
 				FCBC9C4E1DD1E8D800BEE0A4 /* ViewController.swift in Sources */,
+				FC7679871DD324C70086316A /* LivingRoomViewController.swift in Sources */,
+				FC76798B1DD324FA0086316A /* UserViewController.swift in Sources */,
 				FCBC9C631DD2095200BEE0A4 /* StaticFunctions.swift in Sources */,
 				FCBC9C671DD214DF00BEE0A4 /* MainViewController.swift in Sources */,
+				FC7679891DD324E90086316A /* HomeViewController.swift in Sources */,
 				FCBC9C541DD1E8D800BEE0A4 /* IBDemo.xcdatamodeld in Sources */,
 				FCBC9C4C1DD1E8D800BEE0A4 /* AppDelegate.swift in Sources */,
 				FC0465E21DD31CB7009FD423 /* AirConditionerViewController.swift in Sources */,
 				FC0465E01DD2EB6A009FD423 /* LightViewController.swift in Sources */,
+				FC76798D1DD325080086316A /* SettingsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
