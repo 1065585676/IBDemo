@@ -1,14 +1,15 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="IBDemo" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -16,11 +17,182 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="Background" translatesAutoresizingMaskIntoConstraints="NO" id="uyd-Id-nEL">
+                                <frame key="frameInset" width="375" height="667"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                            </imageView>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="wyy" borderStyle="roundedRect" placeholder="Username" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="TQA-aC-0Am">
+                                <frame key="frameInset" minX="16" minY="200" width="343" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" enablesReturnKeyAutomatically="YES"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="123" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="aMN-zD-fxM">
+                                <frame key="frameInset" minX="16" minY="250" width="343" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" enablesReturnKeyAutomatically="YES" secureTextEntry="YES"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UZy-HX-V4M">
+                                <frame key="frameInset" minX="16" minY="318" width="343" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Login"/>
+                                <connections>
+                                    <action selector="Button_Login_Action:" destination="BYZ-38-t0r" eventType="touchUpInside" id="X2n-fs-Agl"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
+                    <connections>
+                        <outlet property="button_login" destination="UZy-HX-V4M" id="RUb-1B-AtN"/>
+                        <outlet property="textField_password" destination="aMN-zD-fxM" id="IuX-i9-8W8"/>
+                        <outlet property="textField_username" destination="TQA-aC-0Am" id="68s-Hc-5x1"/>
+                        <segue destination="Oki-2k-HmP" kind="showDetail" identifier="LOGINSUCCESS" id="1aq-YA-g4S"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="-354" y="61"/>
+        </scene>
+        <!--Main View Controller-->
+        <scene sceneID="Bsl-LQ-QgY">
+            <objects>
+                <viewController id="Oki-2k-HmP" customClass="MainViewController" customModule="IBDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="hfk-HO-V2u"/>
+                        <viewControllerLayoutGuide type="bottom" id="oZa-m0-Tke"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="hW0-Hy-seq">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="Background" translatesAutoresizingMaskIntoConstraints="NO" id="XR9-Z8-ydf">
+                                <frame key="frameInset" width="375" height="667"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                            </imageView>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="F6G-j1-sKT">
+                                <frame key="frameInset" minX="44" minY="66" width="286" height="557"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="50" minimumInteritemSpacing="10" id="DUQ-oh-B4G">
+                                    <size key="itemSize" width="100" height="100"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="Cell" id="pTs-1s-riT">
+                                        <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                            <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" tag="101" contentMode="center" fixedFrame="YES" image="light" translatesAutoresizingMaskIntoConstraints="NO" id="eeb-gA-WRN">
+                                                    <frame key="frameInset" width="100" height="100"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                                </imageView>
+                                            </subviews>
+                                        </view>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                    </collectionViewCell>
+                                </cells>
+                            </collectionView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <outlet property="collectionView_mainContents" destination="F6G-j1-sKT" id="mra-zP-gv9"/>
+                        <segue destination="8J2-j7-w1T" kind="show" identifier="LIGHT_DETAIL" id="Qy8-if-hDm"/>
+                        <segue destination="4ni-UB-Dq4" kind="show" identifier="AIRCONDITIONER_DETAIL" id="d77-ow-Ljj"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Hyc-kE-YTF" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="336.80000000000001" y="58.920539730134934"/>
+        </scene>
+        <!--Light View Controller-->
+        <scene sceneID="JLu-Y5-7mH">
+            <objects>
+                <viewController id="8J2-j7-w1T" customClass="LightViewController" customModule="IBDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="W41-bA-4k5"/>
+                        <viewControllerLayoutGuide type="bottom" id="rcn-cE-v7r"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="MPe-mV-roF">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="Background" translatesAutoresizingMaskIntoConstraints="NO" id="5jV-BB-X5t">
+                                <frame key="frameInset" width="375" height="667"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                            </imageView>
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ZHO-rq-O4T">
+                                <frame key="frameInset" minY="20" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <items>
+                                    <navigationItem title="Light" id="u35-Y9-WU6">
+                                        <barButtonItem key="leftBarButtonItem" systemItem="reply" id="fMz-dK-zei" userLabel="Back">
+                                            <connections>
+                                                <action selector="Button_back:" destination="8J2-j7-w1T" id="bUc-Br-7HJ"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7P5-xR-GKN" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="337" y="-857"/>
+        </scene>
+        <!--Air Conditioner View Controller-->
+        <scene sceneID="1Rc-bZ-fZR">
+            <objects>
+                <viewController id="4ni-UB-Dq4" customClass="AirConditionerViewController" customModule="IBDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="8G1-WX-iac"/>
+                        <viewControllerLayoutGuide type="bottom" id="h9J-yv-kdY"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="f9c-R7-k3h">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="Background" translatesAutoresizingMaskIntoConstraints="NO" id="cpe-Bi-Agd">
+                                <frame key="frameInset" width="375" height="667"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                            </imageView>
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1Os-1a-R7Y">
+                                <frame key="frameInset" minY="20" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <items>
+                                    <navigationItem title="Air Conditioner" id="QeM-1z-IfL">
+                                        <barButtonItem key="leftBarButtonItem" systemItem="reply" id="cyG-gq-UDV" userLabel="Back">
+                                            <connections>
+                                                <action selector="Button_back:" destination="4ni-UB-Dq4" id="uSR-Yj-4U3"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="F8i-JF-K9Q" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1090" y="-858"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Background" width="375" height="667"/>
+        <image name="light" width="76" height="96"/>
+    </resources>
 </document>
