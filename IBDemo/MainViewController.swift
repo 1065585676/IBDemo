@@ -74,6 +74,14 @@ class MainViewController: UIViewController, UICollectionViewDataSource, UICollec
             LightController()
         case "airconditioner":
             AirConditionerController()
+        case "livingroom":
+            LivingRoomController()
+        case "home":
+            HomeController()
+        case "user":
+            UserController()
+        case "settings":
+            SettingsController()
         default:
             print("error")
         }
@@ -88,6 +96,18 @@ class MainViewController: UIViewController, UICollectionViewDataSource, UICollec
                 destinationVC.username = self.username
             case "AIRCONDITIONER_DETAIL":
                 let destinationVC = segue.destination as! AirConditionerViewController
+                destinationVC.username = self.username
+            case "LIVINGROOM_DETAIL":
+                let destinationVC = segue.destination as! LivingRoomViewController
+                destinationVC.username = self.username
+            case "HOME_DETAIL":
+                let destinationVC = segue.destination as! HomeViewController
+                destinationVC.username = self.username
+            case "USER_DETAIL":
+                let destinationVC = segue.destination as! UserViewController
+                destinationVC.username = self.username
+            case "SETTINGS_DETAIL":
+                let destinationVC = segue.destination as! SettingsViewController
                 destinationVC.username = self.username
             default:
                 StaticFunctions.ShowAlert(atViewController: self, withMsg: "")
@@ -124,6 +144,22 @@ class MainViewController: UIViewController, UICollectionViewDataSource, UICollec
     
     func AirConditionerController() {
         self.performSegue(withIdentifier: "AIRCONDITIONER_DETAIL", sender: self)
+    }
+    
+    func LivingRoomController() {
+        self.performSegue(withIdentifier: "LIVINGROOM_DETAIL", sender: self)
+    }
+
+    func HomeController() {
+        self.performSegue(withIdentifier: "HOME_DETAIL", sender: self)
+    }
+
+    func UserController() {
+        self.performSegue(withIdentifier: "USER_DETAIL", sender: self)
+    }
+
+    func SettingsController() {
+        self.performSegue(withIdentifier: "SETTINGS_DETAIL", sender: self)
     }
     
 }
