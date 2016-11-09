@@ -7,15 +7,26 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5AAE856FB3A9DC39E736D171 /* Pods_IBDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CDFC2F1F38946AFECDDEA7DC /* Pods_IBDemo.framework */; };
+		FC0465E01DD2EB6A009FD423 /* LightViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC0465DF1DD2EB6A009FD423 /* LightViewController.swift */; };
+		FC0465E21DD31CB7009FD423 /* AirConditionerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC0465E11DD31CB7009FD423 /* AirConditionerViewController.swift */; };
 		FCBC9C4C1DD1E8D800BEE0A4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCBC9C4B1DD1E8D800BEE0A4 /* AppDelegate.swift */; };
 		FCBC9C4E1DD1E8D800BEE0A4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCBC9C4D1DD1E8D800BEE0A4 /* ViewController.swift */; };
 		FCBC9C511DD1E8D800BEE0A4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FCBC9C4F1DD1E8D800BEE0A4 /* Main.storyboard */; };
 		FCBC9C541DD1E8D800BEE0A4 /* IBDemo.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FCBC9C521DD1E8D800BEE0A4 /* IBDemo.xcdatamodeld */; };
 		FCBC9C561DD1E8D800BEE0A4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FCBC9C551DD1E8D800BEE0A4 /* Assets.xcassets */; };
 		FCBC9C591DD1E8D800BEE0A4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FCBC9C571DD1E8D800BEE0A4 /* LaunchScreen.storyboard */; };
+		FCBC9C611DD2009200BEE0A4 /* URLDefine.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCBC9C601DD2009200BEE0A4 /* URLDefine.swift */; };
+		FCBC9C631DD2095200BEE0A4 /* StaticFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCBC9C621DD2095200BEE0A4 /* StaticFunctions.swift */; };
+		FCBC9C671DD214DF00BEE0A4 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCBC9C661DD214DF00BEE0A4 /* MainViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5B83E85C8F526A30E955B430 /* Pods-IBDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IBDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-IBDemo/Pods-IBDemo.release.xcconfig"; sourceTree = "<group>"; };
+		96E94F7B242E40FF30085AC5 /* Pods-IBDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IBDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-IBDemo/Pods-IBDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		CDFC2F1F38946AFECDDEA7DC /* Pods_IBDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_IBDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FC0465DF1DD2EB6A009FD423 /* LightViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LightViewController.swift; sourceTree = "<group>"; };
+		FC0465E11DD31CB7009FD423 /* AirConditionerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AirConditionerViewController.swift; sourceTree = "<group>"; };
 		FCBC9C481DD1E8D800BEE0A4 /* IBDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IBDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FCBC9C4B1DD1E8D800BEE0A4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FCBC9C4D1DD1E8D800BEE0A4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -24,6 +35,9 @@
 		FCBC9C551DD1E8D800BEE0A4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FCBC9C581DD1E8D800BEE0A4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FCBC9C5A1DD1E8D800BEE0A4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FCBC9C601DD2009200BEE0A4 /* URLDefine.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = URLDefine.swift; sourceTree = "<group>"; };
+		FCBC9C621DD2095200BEE0A4 /* StaticFunctions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StaticFunctions.swift; sourceTree = "<group>"; };
+		FCBC9C661DD214DF00BEE0A4 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +45,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5AAE856FB3A9DC39E736D171 /* Pods_IBDemo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		08CE307D3C1152082F84C21D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CDFC2F1F38946AFECDDEA7DC /* Pods_IBDemo.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		3E5B06E4D6082451A8602089 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				96E94F7B242E40FF30085AC5 /* Pods-IBDemo.debug.xcconfig */,
+				5B83E85C8F526A30E955B430 /* Pods-IBDemo.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		FCBC9C3F1DD1E8D800BEE0A4 = {
 			isa = PBXGroup;
 			children = (
 				FCBC9C4A1DD1E8D800BEE0A4 /* IBDemo */,
 				FCBC9C491DD1E8D800BEE0A4 /* Products */,
+				3E5B06E4D6082451A8602089 /* Pods */,
+				08CE307D3C1152082F84C21D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -60,9 +94,14 @@
 				FCBC9C4D1DD1E8D800BEE0A4 /* ViewController.swift */,
 				FCBC9C4F1DD1E8D800BEE0A4 /* Main.storyboard */,
 				FCBC9C551DD1E8D800BEE0A4 /* Assets.xcassets */,
+				FCBC9C661DD214DF00BEE0A4 /* MainViewController.swift */,
+				FC0465DF1DD2EB6A009FD423 /* LightViewController.swift */,
+				FC0465E11DD31CB7009FD423 /* AirConditionerViewController.swift */,
 				FCBC9C571DD1E8D800BEE0A4 /* LaunchScreen.storyboard */,
 				FCBC9C5A1DD1E8D800BEE0A4 /* Info.plist */,
 				FCBC9C521DD1E8D800BEE0A4 /* IBDemo.xcdatamodeld */,
+				FCBC9C601DD2009200BEE0A4 /* URLDefine.swift */,
+				FCBC9C621DD2095200BEE0A4 /* StaticFunctions.swift */,
 			);
 			path = IBDemo;
 			sourceTree = "<group>";
@@ -74,9 +113,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = FCBC9C5D1DD1E8D800BEE0A4 /* Build configuration list for PBXNativeTarget "IBDemo" */;
 			buildPhases = (
+				55C721471A83E0CAADE04D21 /* [CP] Check Pods Manifest.lock */,
 				FCBC9C441DD1E8D800BEE0A4 /* Sources */,
 				FCBC9C451DD1E8D800BEE0A4 /* Frameworks */,
 				FCBC9C461DD1E8D800BEE0A4 /* Resources */,
+				262ED38CDA190C9C3829625B /* [CP] Embed Pods Frameworks */,
+				16AD98409A2B1F08CB5348ED /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -135,14 +177,67 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		16AD98409A2B1F08CB5348ED /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-IBDemo/Pods-IBDemo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		262ED38CDA190C9C3829625B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-IBDemo/Pods-IBDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		55C721471A83E0CAADE04D21 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		FCBC9C441DD1E8D800BEE0A4 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FCBC9C611DD2009200BEE0A4 /* URLDefine.swift in Sources */,
 				FCBC9C4E1DD1E8D800BEE0A4 /* ViewController.swift in Sources */,
+				FCBC9C631DD2095200BEE0A4 /* StaticFunctions.swift in Sources */,
+				FCBC9C671DD214DF00BEE0A4 /* MainViewController.swift in Sources */,
 				FCBC9C541DD1E8D800BEE0A4 /* IBDemo.xcdatamodeld in Sources */,
 				FCBC9C4C1DD1E8D800BEE0A4 /* AppDelegate.swift in Sources */,
+				FC0465E21DD31CB7009FD423 /* AirConditionerViewController.swift in Sources */,
+				FC0465E01DD2EB6A009FD423 /* LightViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -261,6 +356,7 @@
 		};
 		FCBC9C5E1DD1E8D800BEE0A4 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 96E94F7B242E40FF30085AC5 /* Pods-IBDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -275,6 +371,7 @@
 		};
 		FCBC9C5F1DD1E8D800BEE0A4 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5B83E85C8F526A30E955B430 /* Pods-IBDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -306,6 +403,7 @@
 				FCBC9C5F1DD1E8D800BEE0A4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
