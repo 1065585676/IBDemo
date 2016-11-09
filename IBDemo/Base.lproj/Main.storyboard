@@ -110,6 +110,10 @@
                         <outlet property="collectionView_mainContents" destination="F6G-j1-sKT" id="mra-zP-gv9"/>
                         <segue destination="8J2-j7-w1T" kind="show" identifier="LIGHT_DETAIL" id="Qy8-if-hDm"/>
                         <segue destination="4ni-UB-Dq4" kind="show" identifier="AIRCONDITIONER_DETAIL" id="d77-ow-Ljj"/>
+                        <segue destination="DwH-lU-Hvp" kind="show" identifier="LIVINGROOM_DETAIL" id="pwI-xM-IbF"/>
+                        <segue destination="587-6S-Jql" kind="show" identifier="HOME_DETAIL" id="gzo-0i-abJ"/>
+                        <segue destination="Trp-Lx-VVw" kind="show" identifier="USER_DETAIL" id="s5r-Wb-Zd3"/>
+                        <segue destination="zZL-aU-2XV" kind="show" identifier="SETTINGS_DETAIL" id="cIA-eX-UWJ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Hyc-kE-YTF" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -151,7 +155,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7P5-xR-GKN" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="337" y="-857"/>
+            <point key="canvasLocation" x="337" y="-1042"/>
         </scene>
         <!--Air Conditioner View Controller-->
         <scene sceneID="1Rc-bZ-fZR">
@@ -188,7 +192,155 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="F8i-JF-K9Q" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1090" y="-858"/>
+            <point key="canvasLocation" x="1710" y="-1042"/>
+        </scene>
+        <!--Living Room View Controller-->
+        <scene sceneID="Ewx-cF-sG1">
+            <objects>
+                <viewController id="DwH-lU-Hvp" customClass="LivingRoomViewController" customModule="IBDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="UYj-WG-Mbh"/>
+                        <viewControllerLayoutGuide type="bottom" id="AyF-hg-uYR"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="GBR-rL-vgI">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="Background" translatesAutoresizingMaskIntoConstraints="NO" id="kRQ-y0-Hiz">
+                                <frame key="frameInset" width="375" height="667"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                            </imageView>
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6PH-hl-J2H">
+                                <frame key="frameInset" minY="20" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <items>
+                                    <navigationItem title="Living Room" id="THb-KD-RYe">
+                                        <barButtonItem key="leftBarButtonItem" systemItem="reply" id="UBC-pH-yKN" userLabel="Back">
+                                            <connections>
+                                                <action selector="Button_back:" destination="DwH-lU-Hvp" id="Dx8-6g-XPK"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="OXV-f7-eSM" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1710" y="-126"/>
+        </scene>
+        <!--User View Controller-->
+        <scene sceneID="n92-VQ-wXz">
+            <objects>
+                <viewController id="Trp-Lx-VVw" customClass="UserViewController" customModule="IBDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="3od-X2-ynZ"/>
+                        <viewControllerLayoutGuide type="bottom" id="WYR-L2-dbM"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="rHv-y8-6fO">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="Background" translatesAutoresizingMaskIntoConstraints="NO" id="WaC-MQ-sNV">
+                                <frame key="frameInset" width="375" height="667"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                            </imageView>
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="l0V-6S-JO5">
+                                <frame key="frameInset" minY="20" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <items>
+                                    <navigationItem title="User" id="56r-9P-fb3">
+                                        <barButtonItem key="leftBarButtonItem" systemItem="reply" id="eog-84-qdf" userLabel="Back">
+                                            <connections>
+                                                <action selector="Button_back:" destination="Trp-Lx-VVw" id="uio-zX-q4e"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="W36-fS-e48" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="337" y="1658"/>
+        </scene>
+        <!--Settings View Controller-->
+        <scene sceneID="PiX-Zk-iLb">
+            <objects>
+                <viewController id="zZL-aU-2XV" customClass="SettingsViewController" customModule="IBDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="k0b-rZ-DNO"/>
+                        <viewControllerLayoutGuide type="bottom" id="Wn9-yu-otm"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="lK5-eQ-hqw">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="Background" translatesAutoresizingMaskIntoConstraints="NO" id="01C-pW-cec">
+                                <frame key="frameInset" width="375" height="667"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                            </imageView>
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="eRt-cB-Y75">
+                                <frame key="frameInset" minY="20" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <items>
+                                    <navigationItem title="Settings" id="UmK-JT-NRT">
+                                        <barButtonItem key="leftBarButtonItem" systemItem="reply" id="3au-v0-OAY" userLabel="Back">
+                                            <connections>
+                                                <action selector="Button_back:" destination="zZL-aU-2XV" id="u1x-cI-f07"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eRd-io-2l5" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1710" y="1659"/>
+        </scene>
+        <!--Home View Controller-->
+        <scene sceneID="kA5-Kq-Cz3">
+            <objects>
+                <viewController id="587-6S-Jql" customClass="HomeViewController" customModule="IBDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="bI1-NP-Xeq"/>
+                        <viewControllerLayoutGuide type="bottom" id="T97-2f-VbG"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Dsb-9g-reX">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="Background" translatesAutoresizingMaskIntoConstraints="NO" id="SFV-eH-Ach">
+                                <frame key="frameInset" width="375" height="667"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                            </imageView>
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="r6S-Qe-Bul">
+                                <frame key="frameInset" minY="20" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <items>
+                                    <navigationItem title="Home" id="068-kv-FJm">
+                                        <barButtonItem key="leftBarButtonItem" systemItem="reply" id="GwC-SY-3ds" userLabel="Back">
+                                            <connections>
+                                                <action selector="Button_back:" destination="587-6S-Jql" id="By4-Xq-0L3"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="azV-jQ-tPx" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1710" y="640"/>
         </scene>
     </scenes>
     <resources>
